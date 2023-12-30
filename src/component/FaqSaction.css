@@ -1,0 +1,24 @@
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 4px solid #e5e5e5;
+}
+.question > button {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+
+  /* align-items: center; */
+  width: 100%;
+  justify-content: left;
+}
+.answer {
+  padding: 1rem;
+}

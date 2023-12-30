@@ -1,0 +1,112 @@
+.nav-text {
+  display: flex;
+  align-items: center;
+}
+
+.header-container-parent {
+ position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  gap: 20rem;
+  align-items: center;
+  background-color: #12406F; 
+}
+.navbar{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* Change this color to your desired background */
+  padding: 1rem;
+}
+.header-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+}
+h3{
+  color: white;
+}
+h2{
+  color: white;
+  font-size: xx-large;
+}
+.background{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  opacity: 0.5;
+  background-color: red;
+}
+.App{
+  margin: auto;
+}
+.App-header{
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  gap: 20rem;
+  align-items: center;
+  background-color: #12406F;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .header-container-parent {
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  h3 {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: red;
+  }
+
+  .App {
+    margin: auto;
+  }
+}
