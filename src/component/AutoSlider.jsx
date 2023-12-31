@@ -38,7 +38,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-               style={{ width: "auto" }}
+              style={{ width: "auto" ,height:"20.5rem"}}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_6.png"
               alt="logo"
             />
@@ -61,7 +61,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto" }}
+              style={{ width: "auto" ,height:"20.5rem"}}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_2.png"
               alt="logo"
             />
@@ -84,7 +84,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto" }}
+              style={{ width: "auto",height:"20.5rem" }}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_3.png"
               alt="logo"
             />
@@ -107,7 +107,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto" }}
+              style={{ width: "auto" ,height:"20.5rem" }}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_14.png"
               alt="logo"
             />

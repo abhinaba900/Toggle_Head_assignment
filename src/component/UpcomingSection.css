@@ -37,6 +37,7 @@ h5 {
 
   .upcoming-text {
      /* Adjust margin for mobile */
+     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;

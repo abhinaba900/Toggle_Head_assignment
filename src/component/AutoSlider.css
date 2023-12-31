@@ -16,6 +16,7 @@
   padding: 1rem;
   width: 100%;
   display: flex;
+  margin: auto;
 }
 
 .slider-Content img {
@@ -34,7 +35,7 @@
   align-items: left;
   justify-content: center;
   padding: 2rem;
-  width: 60%;
+  width: 55%;
   height: auto;
   margin: auto;
 }

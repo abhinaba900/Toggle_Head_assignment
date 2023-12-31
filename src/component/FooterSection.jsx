@@ -27,37 +27,39 @@ function FooterSection() {
         <Heading>Follow us</Heading>
         <div className="footer-icons">
           <FaFacebookF color="white" className="icons" />
-          <FaLinkedinIn color="white" className="icons" width={{}} />
-          <FaInstagram color="white" className="icons" width={{}} />
-          <TiSocialTwitter color="white" className="icons" width={{}} />
-          <CiYoutube color="white" className="icons" width={{}} />
-          <FaQuora color="white" className="icons" width={{}} />
+          <FaLinkedinIn color="white" className="icons" />
+          <FaInstagram color="white" className="icons" />
+          <TiSocialTwitter color="white" className="icons" />
+          <CiYoutube color="white" className="icons" />
+          <FaQuora color="white" className="icons" />
         </div>
       </div>
       <div className="footer-text">
         <Heading>Head Office</Heading>
-        <div style={{ display: "flex" }}>
-          <CiLocationOn fontSize={"2.5rem"} color={"white"} />
-          <Text color={"white"}>
+        <div style={{ display: "flex" }} alignItems={"center"}>
+          <Text display={"flex"} alignItems={"center"} color={"white"}>
+            <CiLocationOn fontSize={"2.5rem"} color={"white"} />
             Lorem ipsum dolor sit amet, consetetur sadipscing elits, sed diam
             nonumy eirmod tempor invidunt ut.
           </Text>
         </div>
         <div style={{ display: "flex" }}>
-          <CiStopwatch fontSize={"2rem"} color={"white"} />
-          <Text color={"white"}>
+          <Text display={"flex"} alignItems={"center"} color={"white"}>
+            <CiStopwatch fontSize={"2rem"} color={"white"} />
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr
           </Text>
         </div>
         <div style={{ display: "flex" }}>
-          <CiStopwatch fontSize={"2rem"} color={"white"} />
-          <Text color={"white"}>
+          <Text display={"flex"} alignItems={"center"} color={"white"}>
+            <CiStopwatch fontSize={"2rem"} color={"white"} />
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr
           </Text>
         </div>
         <div style={{ display: "flex" }}>
-          <FaTrainSubway fontSize={"1.5rem"} color={"white"} />
-          <Text color={"white"}>Lorem ipsum asd asdsaweeq Lorem Ipsum</Text>
+          <Text display={"flex"} alignItems={"center"} color={"white"}>
+            <FaTrainSubway fontSize={"1.5rem"} color={"white"} />
+            Lorem ipsum asd asdsaweeq Lorem Ipsum
+          </Text>
         </div>
       </div>
     </div>

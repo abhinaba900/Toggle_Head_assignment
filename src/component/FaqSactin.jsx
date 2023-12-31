@@ -58,6 +58,7 @@ function FaqSactin() {
               <FaPlusCircle style={{ fontSize: "1.5rem" }} />
             )}
           </article>
+          <hr />
           <article className="answer">
             {open === index && (
               <Text
@@ -73,6 +74,7 @@ function FaqSactin() {
               </Text>
             )}
           </article>
+          
         </>
       ))}
     </div>
