@@ -24,43 +24,47 @@ erat, sed diam voluptua. At vero eos et`,
 consetetur sadipscing elitr, sed diam
 nonumy eirmod tempor invidunt ut`,
   ];
-  const divRefs = useRef([]);
+    const divRefs = useRef([]);
+ useEffect(() => {
+   divRefs.current = Array(counts.length)
+     .fill(null)
+     .map((_, index) => divRefs.current[index] || React.createRef());
 
-  useEffect(() => {
-    divRefs.current = Array(counts.length)
-      .fill(null)
-      .map((_, index) => divRefs.current[index] || React.createRef());
+   const handleScroll = () => {
+     if (window.scrollY >= 500) {
+       const animationDuration = 2000; // in milliseconds
+       const framesPerSecond = 60;
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [counts.length]);
+       const intervals = currentCounts.map((item, index) => {
+         const totalFrames = (animationDuration / 1000) * framesPerSecond;
+         const increment = item.endValue / totalFrames;
 
-  useEffect(() => {
-    const animationDuration = 2000; // in milliseconds
-    const framesPerSecond = 60;
+         return setInterval(() => {
+           setCurrentCounts((prevCounts) => {
+             const newCounts = [...prevCounts];
+             if (newCounts[index].count + increment < item.endValue) {
+               newCounts[index].count += increment;
+             } else {
+               newCounts[index].count = item.endValue;
+               clearInterval(intervals[index]);
+             }
+             return newCounts;
+           });
+         }, 6000 / framesPerSecond);
+       });
 
-    const intervals = currentCounts.map((item, index) => {
-      const totalFrames = (animationDuration / 1000) * framesPerSecond;
-      const increment = item.endValue / totalFrames;
+       return () => {
+         intervals.forEach((interval) => clearInterval(interval));
+       };
+     }
+   };
 
-      return setInterval(() => {
-        setCurrentCounts((prevCounts) => {
-          const newCounts = [...prevCounts];
-          if (newCounts[index].count + increment < item.endValue) {
-            newCounts[index].count += increment;
-          } else {
-            newCounts[index].count = item.endValue;
-            clearInterval(intervals[index]);
-          }
-          return newCounts;
-        });
-      }, 3000 / framesPerSecond);
-    });
+   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      intervals.forEach((interval) => clearInterval(interval));
-    };
-  }, [currentCounts]);
-
+   return () => {
+     window.removeEventListener("scroll", handleScroll);
+   };
+ }, [currentCounts, counts.length]);
   return (
     <div className="auto-number-change">
       {counts.map((item, index) => (
