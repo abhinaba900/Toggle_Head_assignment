@@ -5,28 +5,6 @@ This project focuses on implementing various functionalities using React.js and 
 ## Overview
 
 The project incorporates several key functionalities and best practices:
-## Screenshots
-
-Include a section with screenshots or images showcasing different parts of your project.
-
-### Top Carousel Section
-
-![Top Carousel](https://drive.google.com/file/d/17nCcnzu0WeJlGTG-XjiQbqu6QV8bWjPp/view?usp=sharing)
-
-
-### Card Slider
-
-![Card Slider](https://drive.google.com/file/d/1JQgWQ_YXzbxNlL6rzwXSlR4YSMA8THUy/view?usp=sharing)
-
-
-### Statistics Section
-
-![Statistics](https://drive.google.com/file/d/1unJ2f4rN29zZGKjZRaL9fFvU5S7tTKhF/view?usp=sharing)
-
-
-### FAQ Section
-
-![FAQ](https://drive.google.com/file/d/1unJ2f4rN29zZGKjZRaL9fFvU5S7tTKhF/view?usp=sharing)
 
 
 ### Carousel Functionality
