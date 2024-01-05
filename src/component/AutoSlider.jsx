@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Image, Heading, Text } from "@chakra-ui/react";
 import { IoMdArrowDropright } from "react-icons/io";
 import "./AutoSlider.css";
@@ -9,6 +9,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 function AutoSlider() {
+   const [show, setShow] = React.useState(true);
+ useEffect(() => {
+  if(window.innerWidth < 768) {
+    setShow(false)
+  }else{
+    setShow(true)
+  }
+ }, [show])
   return (
     <div className="slider">
       <Swiper
@@ -38,7 +46,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto" ,height:"20.5rem"}}
+              style={{ width: "auto", height: show ? "20.5rem" : "auto" }}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_6.png"
               alt="logo"
             />
@@ -61,7 +69,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto" ,height:"20.5rem"}}
+              style={{ width: "auto", height: show ? "20.5rem" : "auto" }}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_2.png"
               alt="logo"
             />
@@ -84,7 +92,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto",height:"20.5rem" }}
+              style={{ width: "auto", height: show ? "20.5rem" : "auto" }}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_3.png"
               alt="logo"
             />
@@ -107,7 +115,7 @@ function AutoSlider() {
               </Button>
             </div>
             <Image
-              style={{ width: "auto" ,height:"20.5rem" }}
+              style={{ width: "auto", height: show ? "20.5rem" : "auto" }}
               src="https://www.theirmindia.org/assets/images/homepage/hbanner_14.png"
               alt="logo"
             />

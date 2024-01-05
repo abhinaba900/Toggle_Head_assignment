@@ -6,8 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-import "./HorizontalScroling.css";
 import { Heading, Text, Button } from "@chakra-ui/react";
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
